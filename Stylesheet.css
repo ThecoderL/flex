@@ -1,39 +1,70 @@
+/*h1, h2, h3, h4, h5, h6 {*/
+/*    margin: 0;*/
+/*    padding: 0;*/
+/*}*/
+
 body{
     display:flex;
+    flex-wrap: wrap;
+    gap: .5rem;
+    justify-content: center;
+    font: 1rem "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
-card{
+.license{
     display:flex;
     gap: 1rem;
-    max-height: 196px;
+    width: 300px;
     background: whitesmoke;
     padding: 1rem;
-    border: .5rem solid #303030;
+    border: .25rem solid black;
     border-radius: 1rem;
 }
 
-pfp{
-    max-height: 64px;
-    min-width: 64px;
+div.headshot{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+div.pfp{
+    height: 80px;
+    width: 80px;
     background: blue;
     border-radius: .5rem;
 }
 
-lines-container{
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-    gap: .5rem;
-    max-height: 100px;
+article{
+    /*padding: 1rem;*/
+
 }
 
-lines{
+article h3{
+    margin-top: unset;
+    padding-top: unset;
+    border-right: 5px solid black;
+    border-bottom: 1px solid black;
+}
+
+.color-container{
     display: flex;
     flex-direction: row;
-    align-content: center;
-    background: grey;
-
+    justify-content: space-between;
+    align-items: center;
 }
+
+.color{
+    display: flex;
+    background: brown;
+    border-radius: .25rem;
+    width: 24px;
+    height: 24px;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+}
+
+
 
 
 
