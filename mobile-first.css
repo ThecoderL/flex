@@ -31,15 +31,34 @@
             text-align: justify;
             text-justify: inter-word;
         }
+
+        img {
+            width: 100%;
+            border-radius: 1rem;
+        }
+
+        .float{
+            width: 50%;
+            filter: blur(1.5rem);
+
+            &.right {
+                margin-left: 1rem;
+                float: right;
+            }
+
+            &.left {
+                margin-right: 1rem;
+                float: left;
+            }
+        }
     }
-
-
 
     hr{
         color: black;
         height: 1px;
         /*border: none;*/
     }
+
 
     footer{
         /*border-top: black solid 2px;*/
@@ -59,7 +78,7 @@
     }
 
     @media (width >= 1000px) {
-        article{
+        article {
             width: 85%;
             display: flex;
             gap: 1rem;
